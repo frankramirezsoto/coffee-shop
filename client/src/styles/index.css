@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Generates a random background*/
+.bg-random {
+    background-image: url('https://source.unsplash.com/random/1920×1080/?coffee');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Image Uploader styles*/
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.preview-wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.preview-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.image-wrapper {
+    position: relative;
+    cursor: move;
+    height: 208px;
+}
+
+
